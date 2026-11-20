@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "MultiPiP Top",
+  "version": "0.1.0",
+  "description": "從不同分頁各開一個可獨立移動、縮放、關閉並自動置頂的影片小窗。",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1aLT65Ct7l9vjDf54pm64JiAX+OIScpF9O8GDlIb/EuENsoE7w1x8VoMiCaXE/kr3FK4fol88EASg3LSnLxeK31rcxyxFmsLEgLPj7nHbyXUkgD9dWrGyQzAKdLDccFsoBkCMpyjGvl97LF+i8s5cdgPG0hvQWJJhqNUujJnHATKCZKMwApZ+RPW01EpeTBY3DRowvsAi6hlXrwDcGJsWuT6Ec3vsBLGK7hPmjPC0fI3SyfoiN4wlgAszWdNY4P/NfldCh2kKFgHwaNGFfPGnO3zepgaMwTQx0xfze94geAEEMHgv6rT+14qxL+OzfAcGcA0X3rhwCxXaOoVyzztSQIDAQAB",
+  "minimum_chrome_version": "116",
+  "permissions": ["tabs", "scripting", "storage", "nativeMessaging"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "為此分頁的影片開啟置頂小窗",
+    "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png" }
+  },
+  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}
